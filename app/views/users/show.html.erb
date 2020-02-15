@@ -1,0 +1,24 @@
+<% if user_signed_in? %>
+<h1>Hello there...</h1>
+
+<div class="row container">
+  <div class="col-sm-6 align-self-center">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Subscribe Today</h5>
+        <p class="card-text">Subscribe to the greatest thing to happen to lazy people since Bootstrap! Save towards buying that special gift for that special someone... or TREAT YO SELF!</p>
+        <a href="https://demo.tutorialzine.com/2016/11/simple-credit-card-validation-form/" class="btn btn-success">Subscribe!</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 align-self-center">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Redeem Your Gift</h5>
+        <p class="card-text">Have you reached your gift cap? Awesome! You can now access our gift collection. Click here to redeem your gift for your chosen special one! Or 'Number One'!</p>
+        <a href="/gifts" class="btn btn-warning">Redeem!</a>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>

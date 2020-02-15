@@ -1,0 +1,20 @@
+<h1>Gift Options</h1>
+
+<% @gifts.each do |gift|%>
+    
+    
+    <p><h4><%=gift.category%></h4></p>
+  
+    <p><%=image_tag "#{gift.image_path}", class: "img-thumbnail box", width: 200%>
+     <div class="form-check">
+  <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+</div>
+      
+    </p>
+    <p><h5><%=gift.name %></h5></p>
+    
+    <p>PRICE: $<%=gift.price%></p>
+    
+<%end%>
+<p><%=link_to 'Redeem Your Gift', new_recipients_path, class:"btn btn-warning" %></p>
+<p><%=link_to 'Back', users_path, class:"btn btn-primary" %></p>
